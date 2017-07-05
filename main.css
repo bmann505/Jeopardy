@@ -1,5 +1,5 @@
 h1 {
-  margin: 0;
+  margin-top: 0;
 }
 header {
   background: #000080;
@@ -9,14 +9,23 @@ header {
 }
 .square {
   background: #000080;
-  height: 20vh;
-  border: .5vw solid #000090;
+  height: 14vh;
+  border: .5vw solid black;
 }
 
 a {
-  font-size: 4vw;
+  font-size: 3vw;
   color: yellow;
   display: flex;
   justify-content: center;
-  margin-top: 2.5vh;
+  margin-top: 2vh;
+}
+
+.title {
+  background-color: #000080;
+  color: #f6f6f6;
+  border: 1vw solid #B6B3B3;
+}
+.row {
+  margin-bottom: 0;
 }
