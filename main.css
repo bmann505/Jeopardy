@@ -1,0 +1,22 @@
+h1 {
+  margin: 0;
+}
+header {
+  background: #000080;
+  color: yellow;
+  margin-bottom: 0%;
+  text-align: center;
+}
+.square {
+  background: #000080;
+  height: 20vh;
+  border: .5vw solid #000090;
+}
+
+a {
+  font-size: 4vw;
+  color: yellow;
+  display: flex;
+  justify-content: center;
+  margin-top: 2.5vh;
+}
