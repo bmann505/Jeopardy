@@ -32,27 +32,33 @@ function getCategories() {
       var urlSix = 'https://opentdb.com/api.php?amount=6&category=' + randomArray[5] + '&type=multiple';
       $.get(urlOne)
         .then(function(dataOne) {
-          $titleOne.text(dataOne.results[0].category)
+          var titleOne = dataOne.results[0].category;
+          $titleOne.text(titleOne.replace("Entertainment:", ""));
         })
       $.get(urlTwo)
         .then(function(dataTwo) {
-          $titleTwo.text(dataTwo.results[0].category);
+          var titleTwo = dataTwo.results[0].category;
+          $titleTwo.text(titleTwo.replace("Entertainment:", ""));
         })
       $.get(urlThree)
         .then(function(dataThree) {
-          $titleThree.text(dataThree.results[0].category);
+          var titleThree = dataThree.results[0].category;
+          $titleThree.text(titleThree.replace("Entertainment:", ""));
         })
       $.get(urlFour)
         .then(function(dataFour) {
-          $titleFour.text(dataFour.results[0].category);
+          var titleFour = dataFour.results[0].category;
+          $titleFour.text(titleFour.replace("Entertainment:", ""));
         })
       $.get(urlFive)
         .then(function(dataFive) {
-          $titleFive.text(dataFive.results[0].category);
+          var titleFive = dataFive.results[0].category;
+          $titleFive.text(titleFive.replace("Entertainment:", ""));
         })
       $.get(urlSix)
         .then(function(dataSix) {
-          $titleSix.text(dataSix.results[0].category);
+          var titleSix = dataSix.results[0].category;
+          $titleSix.text(titleSix.replace("Entertainment:", ""));
         })
     })
 }
