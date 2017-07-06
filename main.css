@@ -38,3 +38,8 @@ p {
 .row {
   margin-bottom: 0;
 }
+.modal-footer,
+.modal {
+  background-color: #000080;
+  color: yellow;
+}
