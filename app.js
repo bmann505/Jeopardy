@@ -55,10 +55,21 @@ function getCategories() {
   $.get('http://jservice.io/api/category?id=' + randomArray[4])
     .then(function(dataFive) {
       $('.title-five').text(dataFive.title);
+      $('.question-five').text(dataFive.clues[0].question);
+      $('.question-eleven').text(dataFive.clues[1].question);
+      $('.question-seventeen').text(dataFive.clues[2].question);
+      $('.question-twentythree').text(dataFive.clues[3].question);
+      $('.question-twentynine').text(dataFive.clues[4].question);
+
     })
   $.get('http://jservice.io/api/category?id=' + randomArray[5])
     .then(function(dataSix) {
       $('.title-six').text(dataSix.title);
+      $('.question-six').text(dataSix.clues[0].question);
+      $('.question-twelve').text(dataSix.clues[1].question);
+      $('.question-eighteen').text(dataSix.clues[2].question);
+      $('.question-twentyfour').text(dataSix.clues[3].question);
+      $('.question-thirty').text(dataSix.clues[4].question);
     })
 }
 getCategories();
