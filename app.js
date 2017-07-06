@@ -36,6 +36,12 @@ function getCategories() {
   $.get('http://jservice.io/api/category?id=' + randomArray[2])
     .then(function(dataThree) {
       $('.title-three').text(dataThree.title);
+      $('.question-three').text(dataThree.clues[0].question);
+      $('.question-nine').text(dataThree.clues[1].question);
+      $('.question-fifteen').text(dataThree.clues[2].question);
+      $('.question-twentyone').text(dataThree.clues[3].question);
+      $('.question-twentyseven').text(dataThree.clues[4].question);
+
     })
   $.get('http://jservice.io/api/category?id=' + randomArray[3])
     .then(function(dataFour) {
